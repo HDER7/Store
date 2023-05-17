@@ -1,9 +1,8 @@
-import React from 'react';
 
 function Editor(props){
     return(
         <div className="container shoe">
-        <div className={`productImage  ${props.imag}`}> </div>
+        <div className={`productImage ${props.imag}`}> </div>
         <div className="size shoeSize">
             <h4>SIZE</h4>
             <ul>

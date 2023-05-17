@@ -10,17 +10,18 @@ import Shirt  from './components/Tshirt';
 function App() {
   return (
     <div className="App">
-    <Menu></Menu>
       <Router>
+      <Menu></Menu>
           <Routes>
             <Route exact path='/' element={<Home></Home>}></Route>
-            <Route path='/e' element={<Shoes></Shoes>}></Route>
-            <Route path='/t' element={<Shirt></Shirt>}></Route>
-            <Route path='/c' element={<Crud></Crud>}></Route>
+            <Route path='/shoes' element={<Shoes></Shoes>}></Route>
+            <Route path='/shirts' element={<Shirt></Shirt>}></Route>
+            <Route path='/clients' element={<Crud></Crud>}></Route>
             <Route  path='*' element={<h1>Error 404</h1>}></Route>
           </Routes>
+          <Foo></Foo>
       </Router>  
-        <Foo></Foo>
+        
     </div>
   );
 }
